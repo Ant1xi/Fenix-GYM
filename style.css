@@ -422,5 +422,97 @@ body.light a {
   color: #e0e0e0;
 }
 
+#imagenLogo {
+  text-align: center;
+  padding: 0px 0;
+}
 
+#imagenLogo img {
+  max-width: 50%;
+  height: auto;
+  display: inline-block;
+  filter: drop-shadow(0 4px 10px rgba(0, 191, 255, 0.4));
+  transition: transform 0.3s ease;
+}
+
+#imagenLogo img:hover {
+  transform: scale(1.05);
+}
+
+
+/* =============================
+   MEDIA QUERIES RESPONSIVE
+============================= */
+@media (max-width: 1024px) {
+  .banner h1 {
+    font-size: 2.4rem;
+  }
+
+  .main-nav ul {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav li a {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  #imagenLogo img {
+    max-width: 70%;
+  }
+
+  form button {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .main-nav li a {
+    font-size: 0.95rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  #imagenLogo img {
+    max-width: 85%;
+  }
+}
 
