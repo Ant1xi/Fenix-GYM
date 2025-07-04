@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center Palace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<div id="welcomeOverlay">
+    <div class="welcome-content">
+        <h2>¡Bienvenido a Fénix Gym!</h2>
+        <p>Renace más fuerte 💪</p>
+    </div>
+</div>
+
+
+<body>
+    <header class="main-header">
+        <div class="banner">
+            <h1>Fenix Gym Bormujos</h1>
+        </div>
+    </header>
+
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios y Bonos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="inicio" class="section" data-aos="fade-up">
+            <h2 class="section-title">Bienvenido a Fitness Center Palace</h2>
+            <p>Tu centro de entrenamiento en Bormujos. Entrena a tu ritmo con acceso a musculación, cardio, clases
+                dirigidas y
+                más. ¡Sin matrícula ni permanencia!</p>
+            <div class="grid">
+                <div class="card" data-bg="spinning">
+                    <h3>Clases dirigidas</h3>
+                    <p>Spinning, HIIT, body pump, pilates y más, todos los días de la semana.</p>
+                </div>
+                <div class="card" data-bg="horarios">
+                    <h3>Horarios amplios</h3>
+                    <p>Lunes a viernes de 7:30 a 22:30, sábados de 9:30 a 13:30. Domingos cerrado.</p>
+                </div>
+                <div class="card" data-bg="bono">
+                    <h3>Tarjeta Bono</h3>
+                    <p>Acceso por días sueltos: 9 entradas válidas por 3 meses, ideal para clases o visitas ocasionales.
+                    </p>
+                </div>
+                <div class="card" data-bg="bono">
+                    <h3>Oferta verano</h3>
+                    <p>Julio y agosto: 55€ con prueba gratis y sin matrícula.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section" data-aos="zoom-in">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="grid">
+                <div class="card" data-aos="zoom-in" data-aos-delay="100" data-bg="instalaciones">
+                    <h3>Centro integral</h3>
+                    <p>Instalaciones modernas adaptadas a todos los niveles. Atención profesional cercana.</p>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="200" data-bg="musculacion">
+                    <h3>Zona de musculación</h3>
+                    <p>Mancuernas, poleas, barras y máquinas para entrenar todo el cuerpo.</p>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="300" data-bg="cardio">
+                    <h3>Cardio</h3>
+                    <p>Bicis, cintas, elípticas, remo y más para mejorar tu forma física.</p>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="400" data-bg="clases">
+                    <h3>Clases colectivas</h3>
+                    <p>Variedad de clases dirigidas para todos los niveles.</p>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="500" data-bg="accesibilidad">
+                    <h3>Accesibilidad</h3>
+                    <p>Acceso para sillas de ruedas y aparcamiento adaptado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="precios" class="section" data-aos="fade-up">
+            <h2 class="section-title">Precios y Bonos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Mensualidad</h3>
+                    <p>Acceso total al gimnasio y clases sin matrícula ni permanencia.</p>
+                    <p class="price">30 €/mes</p>
+                </div>
+                <div class="card">
+                    <h3>Tarjeta Bono</h3>
+                    <p>9 accesos válidos 3 meses. Ideal para visitas puntuales.</p>
+                    <p class="price">25 €</p>
+                </div>
+                <div class="card">
+                    <h3>Clase suelta</h3>
+                    <p>Ven a una clase sin necesidad de bono ni mensualidad.</p>
+                    <p class="price">4 €</p>
+                </div>
+                <div class="card">
+                    <h3>Ofertas</h3>
+                    <p>Consulta en Instagram o en recepción. Descuentos para estudiantes o familiares.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section" data-aos="fade-up">
+            <h2 class="section-title">Contacto</h2>
+            <p>¿Tienes dudas? Contáctanos o visítanos en el gimnasio.</p>
+            <form id="contactForm" action="https://formspree.io/f/xvgrbndb" method="POST">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+                <p id="formMessage" style="margin-top: 10px;"></p>
+            </form>
+        </section>
+        <button id="scrollToTop" title="Volver arriba">↑</button>
+        <button id="themeToggle" title="Cambiar tema">🎨</button>
+    </main>
+
+    <footer class="main-footer" data-aos="fade-up">
+        <div class="container">
+
+            <p>&copy; 2025 Fitness Center Palace</p>
+            <p>Calle Manuel Esquivas, 31, Bormujos, Sevilla</p>
+            <p>Tel: 854 73 59 83 | <a
+                    href="https://www.instagram.com/fenixgymbormujos/"
+                    target="_blank">Instagram</a></p>
+            <p id="fechaActual"></p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+            enlace.addEventListener('click', function (e) {
+                e.preventDefault();
+                const destino = document.querySelector(this.getAttribute('href'));
+                if (destino) {
+                    destino.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollToTop");
+        window.addEventListener("scroll", () => {
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // evita que recargue la página
+
+            const nombre = this.nombre.value.trim();
+            const email = this.email.value.trim();
+            const mensaje = this.mensaje.value.trim();
+            const mensajeConfirmacion = document.getElementById("formMessage");
+
+            if (!nombre || !email || !mensaje) {
+                mensajeConfirmacion.textContent = "Por favor, rellena todos los campos.";
+                mensajeConfirmacion.style.color = "#ff6666";
+            } else {
+                mensajeConfirmacion.textContent = "¡Gracias por tu mensaje! Te responderemos pronto.";
+                mensajeConfirmacion.style.color = "#00ffcc";
+                this.reset(); // limpia el formulario
+            }
+
+            mensajeConfirmacion.style.display = "block";
+        });
+    </script>
+
+    <script>
+        const themeToggle = document.getElementById("themeToggle");
+
+        // Aplicar el tema guardado al cargar
+        window.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.body.classList.add("light");
+            }
+        });
+
+        // Alternar tema y guardar
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light");
+            const isLight = document.body.classList.contains("light");
+            localStorage.setItem("theme", isLight ? "light" : "dark");
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", () => {
+            const msg = document.getElementById("welcomeMsg");
+            msg.style.opacity = "1";
+            setTimeout(() => {
+                msg.style.opacity = "0";
+            }, 4000); // Desaparece tras 4 segundos
+        });
+    </script>
+
+    <script>
+        const fecha = new Date();
+        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("fechaActual").textContent = "Hoy es " + fecha.toLocaleDateString('es-ES', opciones);
+    </script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const overlay = document.getElementById("welcomeOverlay");
+
+            // Después de unos segundos, se lanza la animación de salida
+            setTimeout(() => {
+                overlay.style.animation = "fadeZoomOut 0.8s ease-in forwards";
+
+                // Después de la animación, se quita del DOM
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 800);
+            }, 2000); // Espera 2 segundos antes de ocultarlo
+        });
+    </script>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        const message = document.getElementById("formMessage");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    message.textContent = "✅ ¡Mensaje enviado con éxito!";
+                    message.style.color = "#00ffcc";
+                    form.reset();
+                } else {
+                    message.textContent = "❌ Hubo un error al enviar.";
+                    message.style.color = "red";
+                }
+            } catch (error) {
+                message.textContent = "⚠️ Error de red o conexión.";
+                message.style.color = "orange";
+            }
+        });
+    </script>
+
+</body>
+
