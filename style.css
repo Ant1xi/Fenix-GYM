@@ -423,26 +423,105 @@ body.light a {
 }
 
 #imagenLogo {
-  text-align: center;
-  padding: 0px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-#imagenLogo img {
-  max-width: 50%;
-  height: auto;
-  display: inline-block;
-  filter: drop-shadow(0 4px 10px rgba(0, 191, 255, 0.4));
+.imagen-mapa {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
   transition: transform 0.3s ease;
 }
 
-#imagenLogo img:hover {
+.imagen-mapa:hover {
+  transform: scale(1.03);
+}
+
+.imagen-logo {
+  max-width: 260px;
+  width: 100%;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+  transition: transform 0.3s ease;
+}
+
+.imagen-logo:hover {
   transform: scale(1.05);
 }
+
+.mensaje-bienvenida {
+  max-width: 500px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.mensaje-bienvenida h2 {
+  font-size: 1.8rem;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.mensaje-bienvenida p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 90px;
+  left: 30px;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+.whatsapp-icon {
+  width: 18px;
+  height: 18px;
+}
+
+body.light .mensaje-bienvenida h2 {
+  color: #004e92; /* azul oscuro profesional */
+}
+
+body.light .mensaje-bienvenida p {
+  color: #1a1a1a; /* texto negro para modo claro */
+}
+
+
+
 
 
 /* =============================
    MEDIA QUERIES RESPONSIVE
 ============================= */
+
 @media (max-width: 1024px) {
   .banner h1 {
     font-size: 2.4rem;
@@ -477,13 +556,20 @@ body.light a {
     padding: 15px;
   }
 
-  #imagenLogo img {
-    max-width: 70%;
-  }
-
   form button {
     font-size: 0.95rem;
     padding: 10px 20px;
+  }
+
+  /* 🔹 Nueva sección mapa + logo */
+  #imagenLogo {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .imagen-mapa,
+  .imagen-logo {
+    max-width: 80%;
   }
 }
 
@@ -511,8 +597,18 @@ body.light a {
     padding: 10px;
   }
 
-  #imagenLogo img {
-    max-width: 85%;
+  /* 🔹 Ajuste fino de imagenLogo en móviles pequeños */
+  #imagenLogo {
+    flex-direction: column;
+    gap: 30px;
+    padding: 3rem 1rem;
+  }
+
+  .imagen-mapa,
+  .imagen-logo {
+    max-width: 80%;
   }
 }
+
+
 

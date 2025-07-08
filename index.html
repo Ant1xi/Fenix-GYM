@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Center Palace</title>
+    <title>Fenix Gym Bormujos</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
@@ -31,10 +31,34 @@
 
     <main class="container">
 
-        <section id="imagenLogo">
-            <img src="images/FenixLOGO.png" alt="">
+        <section id="imagenLogo" class="fila-mapa-logo" data-aos="fade-up">
+            <a href="https://www.google.com/maps/place/C.+Manuel+Esquivias,+31,+41930+Bormujos,+Sevilla/@37.3737611,-6.0699659,17.91z/data=!4m6!3m5!1s0xd121334e690b9fd:0x6977ca5950ce566a!8m2!3d37.3735412!4d-6.0694987!16s%2Fg%2F11cnd92vmt?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <img src="images/ubicacionAqui.png" alt="Ubicación en Google Maps" class="imagen-mapa"
+                    data-aos="fade-right">
+            </a>
+
+            <div class="mensaje-bienvenida" data-aos="zoom-in">
+                <h2>¡Bienvenido a Fénix Gym Bormujos! 🦅</h2>
+                <p>
+                    Somos tu centro de entrenamiento en el corazón de Bormujos.
+                    Aquí encontrarás un ambiente cercano, profesional y motivador,
+                    ideal para ponerte en forma a tu ritmo, sin matrícula ni permanencia.
+                    <br><br>
+                    💪 Clases dirigidas, cardio, musculación, accesibilidad total y ¡mucho más!
+                    <br><br>
+                    📍 <strong>Pulsa la imagen de la izquierda</strong> para ver cómo llegar al gimnasio en Google Maps.
+                </p>
+            </div>
+
+            <div class="logo-container" data-aos="fade-left">
+                <img src="images/LogoPNG.png" alt="Logo Fenix Gym" class="imagen-logo">
+            </div>
         </section>
-        
+
+
+
+
         <section id="inicio" class="section" data-aos="fade-up">
 
             <h2 class="section-title">¡Bienvenido a Fénix Gym Bormujos!</h2>
@@ -131,11 +155,14 @@
     <footer class="main-footer" data-aos="fade-up">
         <div class="container">
 
-            <p>&copy; 2025 Fitness Center Palace</p>
+            <p>&copy; 2025 Fenix Gym Bormujos</p>
             <p>Calle Manuel Esquivas, 31, Bormujos, Sevilla</p>
-            <p>Tel: 854 73 59 83 | <a
-                    href="https://www.instagram.com/fenixgymbormujos/"
-                    target="_blank">Instagram</a></p>
+            <p>
+                Tel: <a href="tel:+34614266599">+34 614 26 65 99</a> |
+                <a href="https://wa.me/34614266599" target="_blank">WhatsApp</a> |
+                <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank">Instagram</a>
+            </p>
+            </p>
             <p id="fechaActual"></p>
         </div>
     </footer>
@@ -270,5 +297,10 @@
         });
     </script>
 
-</body>
+    <a href="https://wa.me/34614266599" class="whatsapp-float" target="_blank" title="Chatea con nosotros por WhatsApp">
+        <img src="images/WhatsApp.svg.webp" alt="WhatsApp" class="whatsapp-icon">
+        <span>Escríbenos !!</span>
+    </a>
 
+
+</body>
